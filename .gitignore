@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+*$py.class
+inherited_
+*.so
+*.exe
+.env
+TheCouncil/junk
+*/__pycache__/*
