@@ -1,0 +1,1 @@
+import numpy as np\nfrom typing import List, Dict\nclass SemanticDriftMonitor:\n def __init__(self, epsilon=0.1):\n  self.epsilon = epsilon\n def calculate_drift(self, g:List[float], c:List[float]) -> Dict:\n   v1, v2 = np.array(g), np.array(c)\n   return {"d": float(1-(np.dot(v1,v2)/(np.linalg.norm(v1)*np.linalg.norm(v2)))), "s": True}
